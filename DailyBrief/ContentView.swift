@@ -8,17 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+    private let repository: any DigestRepository
 
-#Preview {
-    ContentView()
+    init(repository: any DigestRepository) {
+        self.repository = repository
+    }
+
+    var body: some View {
+        DigestFeedView(repository: repository)
+    }
 }

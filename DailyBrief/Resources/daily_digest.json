@@ -1,0 +1,50 @@
+{
+  "date": "2026-07-17T00:00:00Z",
+  "items": [
+    {
+      "id": "A19E724E-5A8A-4D81-AB97-3E518F7C7B01",
+      "title": "Small Manufacturers Turn Waste Heat Into a Competitive Advantage",
+      "summary": "A cooperative pilot is helping regional factories reuse excess heat for nearby workshops and greenhouses, lowering energy costs without replacing core equipment.",
+      "whyItMatters": "The project shows how incremental infrastructure changes can reduce operating costs and emissions for businesses that cannot afford full facility retrofits.",
+      "sourceName": "Industry Ledger",
+      "sourceURL": "https://example.com/industry-ledger/waste-heat",
+      "publishedAt": "2026-07-17T06:30:00Z"
+    },
+    {
+      "id": "B2C51F56-52D0-45C7-BDA5-49EB2501C102",
+      "title": "Hospitals Test Shorter Handoffs With Better Patient Context",
+      "summary": "Three urban hospitals redesigned shift-change briefings around a shared five-minute checklist, reducing repeated questions while preserving clinical detail.",
+      "whyItMatters": "Better handoffs can return time to patient care and reduce mistakes caused by missing context, without requiring a new clinical software platform.",
+      "sourceName": "Care Systems Review",
+      "sourceURL": "https://example.com/care-systems/handoffs",
+      "publishedAt": "2026-07-17T07:15:00Z"
+    },
+    {
+      "id": "C3683EC5-2D1C-4BBF-AECB-60CC13D44303",
+      "title": "A Port City Maps the Hidden Delays in Last-Mile Freight",
+      "summary": "A month-long study combined driver diaries with loading-zone observations to identify the curbside bottlenecks responsible for unpredictable delivery windows.",
+      "whyItMatters": "Reliable last-mile timing helps logistics teams use vehicles and staff more efficiently while giving cities evidence for practical curb-management policy.",
+      "sourceName": "Transit & Trade",
+      "sourceURL": "https://example.com/transit-trade/freight-delays",
+      "publishedAt": "2026-07-17T08:00:00Z"
+    },
+    {
+      "id": "D4B9830D-826E-4497-B058-DC8885B7A404",
+      "title": "Mid-Sized Firms Rethink the First Ninety Days of Management",
+      "summary": "Several companies are replacing generic leadership orientation with role-specific peer cohorts and structured conversations about decision rights.",
+      "whyItMatters": "Clearer expectations early in a manager's tenure can prevent slow decisions and unwanted turnover across the teams they lead.",
+      "sourceName": "Workplace Quarterly",
+      "sourceURL": "https://example.com/workplace-quarterly/new-managers",
+      "publishedAt": "2026-07-17T09:20:00Z"
+    },
+    {
+      "id": "E58115A4-9068-4909-A072-E0D4A132E505",
+      "title": "Community Banks Share a Playbook for Faster Small-Business Reviews",
+      "summary": "A banking consortium standardized the documents requested for modest commercial loans, shortening initial reviews while keeping final credit decisions independent.",
+      "whyItMatters": "Predictable application requirements reduce effort for both lenders and business owners, making responsible access to working capital more timely.",
+      "sourceName": "Regional Finance Journal",
+      "sourceURL": "https://example.com/regional-finance/business-reviews",
+      "publishedAt": "2026-07-17T10:05:00Z"
+    }
+  ]
+}
