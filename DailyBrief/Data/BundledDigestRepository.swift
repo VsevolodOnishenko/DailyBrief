@@ -1,7 +1,7 @@
 import Foundation
 
-struct BundledDigestRepository: DigestRepository {
-    enum RepositoryError: Error, Equatable {
+nonisolated struct BundledDigestRepository: DigestRepository {
+    nonisolated enum RepositoryError: Error, Equatable, Sendable {
         case resourceNotFound(String)
         case unreadableResource
         case invalidDigest
@@ -15,6 +15,7 @@ struct BundledDigestRepository: DigestRepository {
         self.resourceName = resourceName
     }
 
+    @concurrent
     func fetchDailyDigest() async throws -> DailyDigest {
         guard let url = bundle.url(forResource: resourceName, withExtension: "json") else {
             throw RepositoryError.resourceNotFound(resourceName)
