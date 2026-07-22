@@ -1,6 +1,6 @@
 import Foundation
 
-struct DigestItem: Codable, Equatable, Hashable, Identifiable, Sendable {
+nonisolated struct DigestItem: Codable, Equatable, Hashable, Identifiable, Sendable {
     let id: UUID
     let title: String
     let summary: String
