@@ -61,6 +61,9 @@ struct DigestFeedView: View {
             }
             .padding()
         }
+        .refreshable {
+            await model.refresh()
+        }
         .navigationDestination(for: DigestItem.self) { item in
             ArticleDetailView(item: item, savedArticles: savedArticles)
         }
