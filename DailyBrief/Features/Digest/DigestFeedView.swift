@@ -1,10 +1,13 @@
 import SwiftUI
 
+@MainActor
 struct DigestFeedView: View {
     @State private var model: DigestFeatureModel
+    private let savedArticles: SavedArticlesFeatureModel
 
-    init(repository: any DigestRepository) {
+    init(repository: any DigestRepository, savedArticles: SavedArticlesFeatureModel) {
         _model = State(initialValue: DigestFeatureModel(repository: repository))
+        self.savedArticles = savedArticles
     }
 
     var body: some View {
@@ -59,7 +62,7 @@ struct DigestFeedView: View {
             .padding()
         }
         .navigationDestination(for: DigestItem.self) { item in
-            ArticleDetailView(item: item)
+            ArticleDetailView(item: item, savedArticles: savedArticles)
         }
     }
 }
