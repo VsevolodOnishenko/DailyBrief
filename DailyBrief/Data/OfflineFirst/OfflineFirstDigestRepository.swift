@@ -1,4 +1,5 @@
 import Foundation
+import DailyBriefDomain
 
 nonisolated struct OfflineFirstDigestRepository: DigestRepository {
     private let localStore: any LocalDigestStore

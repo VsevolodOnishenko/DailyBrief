@@ -1,4 +1,5 @@
 import Foundation
+import DailyBriefDomain
 
 nonisolated enum RemoteDigestRepositoryError: Error, Sendable {
     case transport(any Error)

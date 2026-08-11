@@ -1,5 +1,6 @@
 import Foundation
 import Testing
+import DailyBriefDomain
 @testable import DailyBrief
 
 @MainActor

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DailyBriefDomain
 
 @MainActor
 struct ContentView: View {

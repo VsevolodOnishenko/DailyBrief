@@ -1,4 +1,5 @@
 import Foundation
+import DailyBriefDomain
 
 nonisolated struct DefaultSavedArticlesRepository: SavedArticlesRepository {
     private let store: any SavedArticlesStore

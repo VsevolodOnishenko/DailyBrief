@@ -1,4 +1,5 @@
 import Foundation
+import DailyBriefDomain
 
 nonisolated struct BundledDigestRepository: DigestRepository {
     nonisolated enum RepositoryError: Error, Equatable, Sendable {

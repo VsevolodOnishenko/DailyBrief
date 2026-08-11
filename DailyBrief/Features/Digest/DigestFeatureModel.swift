@@ -1,4 +1,5 @@
 import Observation
+import DailyBriefDomain
 
 @MainActor
 @Observable
