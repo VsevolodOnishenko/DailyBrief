@@ -5,8 +5,12 @@ struct DigestFeedView: View {
     @State private var model: DigestFeatureModel
     private let savedArticles: SavedArticlesFeatureModel
 
-    init(repository: any DigestRepository, savedArticles: SavedArticlesFeatureModel) {
-        _model = State(initialValue: DigestFeatureModel(repository: repository))
+    init(
+        repository: any DigestRepository,
+        savedArticles: SavedArticlesFeatureModel,
+        analytics: any AnalyticsTracking
+    ) {
+        _model = State(initialValue: DigestFeatureModel(repository: repository, analytics: analytics))
         self.savedArticles = savedArticles
     }
 
