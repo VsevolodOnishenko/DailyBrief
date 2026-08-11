@@ -14,9 +14,14 @@ final class SavedArticlesFeatureModel {
 
     private(set) var state: State = .idle
     private let repository: any SavedArticlesRepository
+    private let analytics: any AnalyticsTracking
 
-    init(repository: any SavedArticlesRepository) {
+    init(
+        repository: any SavedArticlesRepository,
+        analytics: any AnalyticsTracking = NoOpAnalyticsTracker()
+    ) {
         self.repository = repository
+        self.analytics = analytics
     }
 
     func load() async {
@@ -35,11 +40,13 @@ final class SavedArticlesFeatureModel {
 
     func save(_ article: SavedArticle) async throws {
         try await repository.save(article)
+        analytics.track(.articleSaved)
         try await refresh()
     }
 
     func remove(id: UUID) async throws {
         try await repository.remove(id: id)
+        analytics.track(.articleRemoved)
         try await refresh()
     }
 

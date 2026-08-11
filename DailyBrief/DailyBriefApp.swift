@@ -13,9 +13,11 @@ import SwiftData
 struct DailyBriefApp: App {
     private let digestRepository: any DigestRepository
     private let savedArticlesRepository: any SavedArticlesRepository
+    private let analytics: any AnalyticsTracking
 
     init() {
         digestRepository = Self.makeDigestRepository()
+        analytics = NoOpAnalyticsTracker()
 
         do {
             let container = try ModelContainer(for: PersistentSavedArticle.self)
@@ -30,7 +32,8 @@ struct DailyBriefApp: App {
         WindowGroup {
             ContentView(
                 repository: digestRepository,
-                savedArticlesRepository: savedArticlesRepository
+                savedArticlesRepository: savedArticlesRepository,
+                analytics: analytics
             )
         }
     }

@@ -14,11 +14,16 @@ final class DigestFeatureModel {
     private(set) var state: State = .idle
     private(set) var isRefreshing = false
     private let repository: any DigestRepository
+    private let analytics: any AnalyticsTracking
     private var loadTask: Task<Void, Never>?
     private var loadGeneration = 0
 
-    init(repository: any DigestRepository) {
+    init(
+        repository: any DigestRepository,
+        analytics: any AnalyticsTracking = NoOpAnalyticsTracker()
+    ) {
         self.repository = repository
+        self.analytics = analytics
     }
 
     func load() async {
@@ -26,6 +31,7 @@ final class DigestFeatureModel {
     }
 
     func refresh() async {
+        analytics.track(.digestRefreshRequested)
         await startLoad(isRefresh: true)
     }
 
