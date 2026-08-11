@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D70000000000000000000001 /* DailyBriefDomain in Frameworks */ = {isa = PBXBuildFile; productRef = D70000000000000000000003 /* DailyBriefDomain */; };
+		D70000000000000000000002 /* DailyBriefDomain in Frameworks */ = {isa = PBXBuildFile; productRef = D70000000000000000000004 /* DailyBriefDomain */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C73784DC300A3D55007EFA03 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D70000000000000000000001 /* DailyBriefDomain in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D70000000000000000000002 /* DailyBriefDomain in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +119,7 @@
 			);
 			name = DailyBrief;
 			packageProductDependencies = (
+				D70000000000000000000003 /* DailyBriefDomain */,
 			);
 			productName = DailyBrief;
 			productReference = C73784CE300A3D53007EFA03 /* DailyBrief.app */;
@@ -135,6 +143,7 @@
 			);
 			name = DailyBriefTests;
 			packageProductDependencies = (
+				D70000000000000000000004 /* DailyBriefDomain */,
 			);
 			productName = DailyBriefTests;
 			productReference = C73784DB300A3D55007EFA03 /* DailyBriefTests.xctest */;
@@ -199,6 +208,9 @@
 			productRefGroup = C73784CF300A3D53007EFA03 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
+			packageReferences = (
+				D70000000000000000000005 /* XCLocalSwiftPackageReference "Packages/DailyBriefDomain" */,
+			);
 			targets = (
 				C73784CD300A3D53007EFA03 /* DailyBrief */,
 				C73784DA300A3D55007EFA03 /* DailyBriefTests */,
@@ -206,6 +218,26 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		D70000000000000000000005 /* XCLocalSwiftPackageReference "Packages/DailyBriefDomain" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/DailyBriefDomain;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D70000000000000000000003 /* DailyBriefDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D70000000000000000000005 /* XCLocalSwiftPackageReference "Packages/DailyBriefDomain" */;
+			productName = DailyBriefDomain;
+		};
+		D70000000000000000000004 /* DailyBriefDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D70000000000000000000005 /* XCLocalSwiftPackageReference "Packages/DailyBriefDomain" */;
+			productName = DailyBriefDomain;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C73784CC300A3D53007EFA03 /* Resources */ = {

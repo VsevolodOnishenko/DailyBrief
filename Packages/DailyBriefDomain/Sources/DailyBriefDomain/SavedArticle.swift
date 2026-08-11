@@ -1,16 +1,16 @@
 import Foundation
 
-nonisolated struct SavedArticle: Equatable, Hashable, Identifiable, Sendable {
-    let id: UUID
-    let title: String
-    let summary: String
-    let whyItMatters: String
-    let sourceName: String
-    let sourceURL: URL
-    let publishedAt: Date
-    let savedAt: Date
+public struct SavedArticle: Equatable, Hashable, Identifiable, Sendable {
+    public let id: UUID
+    public let title: String
+    public let summary: String
+    public let whyItMatters: String
+    public let sourceName: String
+    public let sourceURL: URL
+    public let publishedAt: Date
+    public let savedAt: Date
 
-    init(
+    public init(
         id: UUID,
         title: String,
         summary: String,
@@ -30,7 +30,7 @@ nonisolated struct SavedArticle: Equatable, Hashable, Identifiable, Sendable {
         self.savedAt = savedAt
     }
 
-    init(item: DigestItem, savedAt: Date) {
+    public init(item: DigestItem, savedAt: Date) {
         self.init(
             id: item.id,
             title: item.title,
@@ -43,7 +43,7 @@ nonisolated struct SavedArticle: Equatable, Hashable, Identifiable, Sendable {
         )
     }
 
-    var digestItem: DigestItem {
+    public var digestItem: DigestItem {
         DigestItem(
             id: id,
             title: title,

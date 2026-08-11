@@ -1,4 +1,5 @@
 import SwiftUI
+import DailyBriefDomain
 
 @MainActor
 struct SavedArticlesView: View {

@@ -1,3 +1,3 @@
-nonisolated protocol DigestRepository: Sendable {
+public protocol DigestRepository: Sendable {
     func fetchDailyDigest() async throws -> DailyDigest
 }

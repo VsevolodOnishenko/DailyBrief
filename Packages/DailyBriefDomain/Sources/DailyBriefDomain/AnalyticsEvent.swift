@@ -1,4 +1,4 @@
-nonisolated enum AnalyticsEvent: Equatable, Sendable {
+public enum AnalyticsEvent: Equatable, Sendable {
     case digestRefreshRequested
     case articleSaved
     case articleRemoved

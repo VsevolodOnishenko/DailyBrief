@@ -1,4 +1,5 @@
 import Foundation
+import DailyBriefDomain
 
 nonisolated protocol SavedArticlesStore: Sendable {
     func loadAll() async throws -> [SavedArticle]

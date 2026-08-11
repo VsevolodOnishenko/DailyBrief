@@ -1,4 +1,5 @@
 import Foundation
+import DailyBriefDomain
 
 nonisolated struct RemoteDailyDigestDTO: Decodable, Sendable {
     let date: Date
